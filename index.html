@@ -1,47 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Original TromDrones</title>
-</head>
-
-<body>
-    <section id="header">
-        <img src="" alt="" id="header-img">
-        <nav id="nav-bar">
-
-
-            <li class="nav-link"><a href="">Features</a></li>
-
-            <li class="nav-link"><a href="">How it Works</a></li>
-
-            <li class="nav-link"><a href="">Pricing</a></li>
-        </nav>
-    </section>
-    <p>Handcrafted, home-made masterpieces</p>
-    <form action="" id="form">
-        <input type="email" name="email" id="email" placeholder="Enter your email address"
-            required>
-        <button type="submit">GET STARTED</button>
-    </form>
-    <section id="features">
-        <p>Features Section goes here</p>
-    </section>
-    <section id="howitworks">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/OV9LXGOXjgs"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen id="video"></iframe>
-    </section>
-    <section id="pricing">
-
-    </section>
-    <section id="footer">
-
-    </section>
-    <script src="./js/index.js"></script>
-</body>
-
-</html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+				<link rel="stylesheet" href="./css/style.css">
+					<title>Original TromDrones</title>
+				</head>
+				<body>
+					<div class="container">
+						<section id="header">
+							<div class="#navbar-brand">
+								<img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="logo"
+                id="header-img">
+								</div>
+								<nav id="nav-bar">
+									<li >
+										<a class="nav-link" type="button" href="#features">Features</a>
+									</li>
+									<li >
+										<a class="nav-link" type="button" href="#howitworks">How it Works</a>
+									</li>
+									<li >
+										<a class="nav-link" type="button" href="#pricing">Pricing</a>
+									</li>
+								</nav>
+							</section>
+							<section id="getting-started">
+								<p>Handcrafted, home-made masterpieces</p>
+								<form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+									<input type="email" name="email" id="email" placeholder="Enter your email address"
+                    required>
+										<input id="submit" type="submit" value="GET STARTED"></input>
+									</form>
+								</section>
+								<section id="features">
+									<div class="feature">
+										<div class="icon">
+											<i class="fab fa-hotjar fa-3x"></i>
+										</div>
+										<div class="description">
+											<h2>Premium Materials</h2>
+											<p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+										</div>
+									</div>
+									<div class="feature">
+										<div class="icon">
+											<i class="fas fa-truck fa-3x"></i>
+										</div>
+										<div class="description">
+											<h2>Fast Shipping</h2>
+											<p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+										</div>
+									</div>
+									<div class="feature">
+										<div class="icon">
+											<i class="fas fa-battery-full fa-3x"></i>
+										</div>
+										<div class="description">
+											<h2>Quality Assurance</h2>
+											<p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+										</div>
+									</div>
+								</section>
+								<section id="howitworks">
+									<div id="video-container">
+										<iframe src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+									</div>
+								</section>
+								<section id="pricing">
+									<div class="product" id="tenor">
+										<div class="level">Tenor Trombone</div>
+										<h2>$600</h2>
+										<ol>
+											<li>Lorem ipsum.</li>
+											<li>Lorem ipsum.</li>
+											<li>Lorem ipsum dolor.</li>
+											<li>Lorem ipsum.</li>
+										</ol>
+										<button class="btn">Select</button>
+									</div>
+									<div class="product" id="tenor">
+										<div class="level">Bass Trombone</div>
+										<h2>$900</h2>
+										<ol>
+											<li>Lorem ipsum.</li>
+											<li>Lorem ipsum.</li>
+											<li>Lorem ipsum dolor.</li>
+											<li>Lorem ipsum.</li>
+										</ol>
+										<button class="btn">Select</button>
+									</div>
+									<div class="product" id="tenor">
+										<div class="level">Valve Trombone</div>
+										<h2>$1200</h2>
+										<ol>
+											<li>Plays similar to a Trumpet</li>
+											<li>Great for Jazz Bands</li>
+											<li>Lorem ipsum dolor.</li>
+											<li>Lorem ipsum.</li>
+										</ol>
+										<button class="btn">Select</button>
+									</div>
+								</section>
+								<section id="footer">
+									<nav #navbar-footer>
+										<li>
+											<a href="#">Privacy</a>
+										</li>
+										<li>
+											<a href="#">Terms</a>
+										</li>
+										<li>
+											<a href="#">Contact</a>
+										</li>
+									</nav>
+									<p>Copyright 2016, Original Trombones</p>
+								</section>
+							</div>
+							<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+							<script src="./js/index.js"></script>
+						</body>
+					</html>

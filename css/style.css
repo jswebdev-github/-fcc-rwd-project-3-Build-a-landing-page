@@ -1,0 +1,317 @@
+* {
+	box-sizing: border-box;
+  }
+  
+  html,
+  body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #eeeeee;
+  }
+  
+  img,
+  nav,
+  iframe,
+  section {
+	width: 100%;
+  }
+  
+  a {
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  a:hover,
+  a:visited,
+  a:focus,
+  a:active {
+	color: #262626;
+  }
+  
+  li {
+	list-style: none;
+  }
+  
+  .container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  #header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: red;
+	width: 100%;
+	height: 10vh;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	  /* z-index: 1; */
+	background-color: #eeeeee;
+  }
+  
+  #header-img {
+	width: 265px;
+	height: 100%;
+  }
+  
+  #nav-bar {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 15px;
+  }
+  
+  .nav-link {
+	padding: 5px 15px;
+	margin: 0 10px;
+  }
+  
+  /* Getting Started Section*/
+  
+  #getting-started {
+	height: 25vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  #getting-started p {
+	font-size: 1.7rem;
+	text-align: center;
+	margin-top: 0;
+  }
+  
+  #getting-started form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+  }
+  
+  #getting-started #email {
+	display: block;
+	width: 20%;
+	margin-bottom: 5px;
+	padding: 8px;
+	font-size: 1rem;
+	border: none;
+  }
+  
+  #getting-started #submit {
+	width: 15%;
+	border: none;
+	margin-top: 10px;
+	border-radius: 3px;
+	padding: 10px 5px;
+	font-weight: bold;
+	background-color: #f1c40f;
+	font-size: 1rem;
+  }
+  
+  /* Features Section */
+  #features {
+	display: grid;
+	justify-content: center;
+	height: 100%;
+	width: 60%;
+  }
+  
+  .feature .icon {
+	display: block;
+	width: 100%;
+	text-align: center;
+  }
+  
+  .feature {
+	display: grid;
+	grid-template-columns: 100px auto;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  /*How it works section  */
+  
+  #howitworks {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  #howitworks #video-container {
+	width: 45%;
+	height: 315px;
+	margin: 30px auto;
+  }
+  
+  #howitworks #video-container #video {
+	height: 100%;
+	width: 100%;
+  }
+  
+  
+  /* Products section */
+  
+  #pricing {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .product {
+	width: 25%;
+	border: 1px solid #262626;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .product .level {
+	background-color: lightgray;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 100%;
+  }
+  
+  .product h2 {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+  }
+  
+  .product ol {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 10px;
+	padding: 0;
+  }
+  
+  .product ol li {
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+	margin: 5px 0;
+  }
+  
+  .product button {
+	border: none;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1rem;
+	text-transform: uppercase;
+	background-color: #f1c40f;
+  }
+  
+  /* Footer Section */
+  
+  #footer {
+	height: 15vh;
+	background-color: #dddddd;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: left;
+  }
+  
+  #footer nav {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	color: #262626;
+  }
+  
+  #footer nav li {
+	margin: 10px;
+	padding: 0 10px;
+	font-size: 1rem;
+	margin: 0;
+  }
+  
+  #footer p {
+	box-sizing: border-box;
+	width: 100%;
+	text-align: right;
+	padding: 0 10px;
+	font-size: 1rem;
+	margin: 0;
+	color: #6b6b6b;
+  }
+  
+  /* Media Queries */
+  
+  @media screen and (max-width: 700px) {
+  
+	#header {
+	  flex-direction: column;
+	  height: 20vh;
+	  padding: 10px 0;
+	}
+  
+	#nav-bar {
+	  flex-direction: column;
+	}
+  
+	#nav-bar li {
+	  text-align: center;
+	  margin: 5px 0;
+	}
+  
+	#getting-started {
+	  padding: 15px 0;
+	}
+  
+	#getting-started #email {
+	  display: block;
+	  width: 60%;
+	  padding: 5px;
+	  border: none;
+	}
+  
+	#getting-started #submit {
+	  width: 40%;
+	}
+  
+	#features {
+	  width: 100%;
+	}
+  
+	#features .icon {
+	  display: none;
+	}
+  
+	.feature {
+	  width: 100%;
+	  grid-template-columns: auto;
+	  text-align: center;
+	}
+  
+	#howitworks #video-container {
+	  width: 90%;
+	}
+  
+	.product {
+	  width: 90%;
+	}
+  
+	#footer {
+	  width: 100%;
+	  padding-right: 1.2rem;
+	}
+  }
+  
